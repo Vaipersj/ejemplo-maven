@@ -8,7 +8,7 @@
 		<version>2.3.4.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.devopsusach2020</groupId>
+	<groupId>cl.devopsusach2020</groupId>
 	<artifactId>DevOpsUsach2020</artifactId>
 	<version>0.0.1</version>
 	<name>APIRestCovid19</name>

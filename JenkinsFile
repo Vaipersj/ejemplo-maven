@@ -11,9 +11,9 @@ pipeline {
                 checkout(
                     [$class: 'GitSCM',
                     //Acá reemplazar por el nonbre de branch
-                    branches: [[name: "circleci" ]],
+                    branches: [[name: "feature-nexus" ]],
                     //Acá reemplazar por su propio repositorio
-                    userRemoteConfigs: [[url: 'https://github.com/tundervirld/clase2mod3seccion3.git']]])
+                    userRemoteConfigs: [[url: 'https://github.com/DiplomadoDevOps2021/ejemplo-maven']]])
             }
         }
         stage("Paso 1: Compliar"){
@@ -49,7 +49,7 @@ pipeline {
                     sh "echo 'Calling sonar Service in another docker container!'"
                     // Run Maven on a Unix agent to execute Sonar.
                     sh 'mvn clean verify sonar:sonar'
-                    sh "echo 'CB [${env.TAREA}]'"
+                    
                 }
             }
             post {

@@ -22,7 +22,7 @@ pipeline {
                 sh "echo 'Compile Code!'"
                 // Run Maven on a Unix agent.
                 sh "mvn clean compile -e"
-                sh "echo  'REPO:' ${env.GIT_URL} 'RAMA: ' ${env.BRANCH_NAME} ' EJECUCIÓN NR:' ${env.BUILD_NUMBER} "
+                sh "echo  'REPO:[' ${env.GIT_URL} '] RAMA: ['${env.GIT_BRANCH}'] EJECUCIÓN NR:[' ${env.BUILD_NUMBER}']' "
                 sh "echo  ${env.STAGE}" 
                 }
             }

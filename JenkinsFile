@@ -13,7 +13,7 @@ pipeline {
                     //Acá reemplazar por el nonbre de branch
                     branches: [[name: "feature-nexus" ]],
                     //Acá reemplazar por su propio repositorio
-                    userRemoteConfigs: [[url: 'https://github.com/DiplomadoDevOps2021/ejemplo-maven']]])
+                    userRemoteConfigs: [[url: 'https://github.com/Vaipersj/ejemplo-maven.git']]])
             }
         }
         stage("Paso 1: Compliar"){
